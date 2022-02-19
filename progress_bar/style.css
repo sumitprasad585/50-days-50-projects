@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+}
+
+
+.progress-container{
+    width: 600px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.progress-bar{
+    position: absolute;
+    height: 10px;
+    background-color: #d3d3d3;
+    width: 100%;
+    z-index: -2;
+}
+
+.progress{
+    background-color: #0096c7;
+    height: 10px;
+    width: 0%;
+    position: absolute;
+    z-index: -1;
+    transition: width 1200ms;
+}
+
+.card{
+    background-color: white;
+    width: 1em; 
+    height: 1em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: 10px solid #d3d3d3;
+    transition: all 1200ms;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card.active{
+    border: 10px solid #0096c7;
+}
+
+button{
+    font-size: 1.2em;
+    padding: 1em 3em;
+    cursor: pointer; 
+    background-color: #0096c7;
+    color: white;
+    border: none;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background-color: #ccc
+}
