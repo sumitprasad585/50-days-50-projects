@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+h1{
+    margin: 0;
+}
+
+#split-container{
+    height: 100vh;
+    display: flex;
+}
+
+.split{
+    flex: 1;
+    position: relative; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    transition: all 800ms ease-in;
+}
+
+.split h1{
+    position: absolute; 
+    top: 8px;
+}
+
+.split.active{
+    flex: 2;
+}
+
+#split-left{
+    background-image: url('images/feliks2.png');
+    background-position: 20%;
+}
+
+#split-right{
+    background-image: url('images/kevin.png');
+    background-position: center;
+    background-color: rgb(36, 34, 34);
+}
+
+.split a{
+    text-decoration: none;
+    background-color: rgba(0, 119, 182, .5); 
+    font-size: 1.25em;
+    padding: 1em 3em;
+    border: none; 
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer; 
+    box-shadow: 0 0.5em 1em -0.5em #fff;
+    outline: none;
+    transition: transform 100ms linear;
+}
+
+.split a:hover{
+    transform: translateY(-5px);
+    background-color:rgba(0, 119, 182, 1);
+    border: 1px solid #fff;
+}
+
+.split.active{
+    background-position: center;
+}
+
+.info{
+    height: 30vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.info p{
+    width: 50%;
+    line-height: 1.5;
+}
