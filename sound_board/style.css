@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@200;300;400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    background-color: #ff99ac;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+
+.btn{
+    font-family: inherit;
+    font-size: 1.5em;
+    background-color: #ff477e;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    margin: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.4));
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
