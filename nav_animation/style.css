@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #caf0f8 50%, #0077b6 50%, #0077b6 100%);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.navbar.active{
+    width: 30%;
+    padding-right: 3em;
+    box-shadow: 0 1em 1em -0.8em #000
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 1em 2em;
+    width: 0%;
+    transition: width 800ms linear;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.navbar.active ul{
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    width: 0%;
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    transition: width 800ms linear;
+}
+
+.navbar.active li{
+    width: 100%;
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.navbar li{
+    margin-right: 1em;
+    width: 0%;
+    opacity: 0;
+    transform: rotateX(360deg);
+    transition: all 800ms linear;
+}
+
+.navbar li:last-child{
+    margin-right: 0;
+}
+
+.navbar a{
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.navbar.active button{
+    right: 5%;
+}
+
+.navbar button{
+    z-index: 100;
+    cursor: pointer; 
+    border: none;
+    position: absolute; 
+    top: 50%;
+    width: 3em;
+    text-align: center;
+    background: transparent;
+}
+
+.line{
+    height: 3px; 
+    width: 100%;
+    background-color: cyan;
+    margin: 0 auto;
+    transition: transform 800ms linear;
+}
+
+.navbar.active .line1{
+    transform: rotate(45deg) translateY(0)
+}
+
+.line1{
+    transform: rotate(0deg) translateY(-0.5em);
+}
+
+.navbar.active .line2{
+    transform: rotate(-45deg) translateY(0);
+}
+
+.line2{
+    transform: rotate(0deg) translateY(0.5em);
+}
