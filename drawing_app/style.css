@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+canvas{
+    border: 3px solid steelblue;
+    background-color: #fff;
+}
+
+.toolbox{
+    width: 506px;
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+.toolbox > *{
+    border: 2px solid slateblue;
+    background-color: #fff;
+    margin-right: 0.1rem;
+    cursor: pointer;
+}
+
+.toolbox button{
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+}
+
+#color{
+    height: 3em;
+    border: 3px solid #fff;
+}
+
+#size{
+    padding: 0.9em;
+}
+
+#clear{
+    margin-left: auto;
+}
